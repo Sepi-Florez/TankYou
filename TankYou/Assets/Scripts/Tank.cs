@@ -19,6 +19,7 @@ public class Tank : MonoBehaviour {
 
     public Animator[] anim;
 
+    public int playerNumber;
 
 	void Update () {
         Movement();
@@ -42,22 +43,24 @@ public class Tank : MonoBehaviour {
     }
     void Shoot() {
         if (Input.GetButtonDown(inputStrings[3])) {
+            
             if (shoot) {
                 GameObject bullet = (GameObject)Instantiate(bulletPref, bulletPos.position, transform.GetChild(0).rotation);
                 shoot = false;
                 ammoCount--;
-                if(ammoCount == 0)
-                    StartCoroutine(ShootInterval(reloadTime));
-                else
-                    StartCoroutine(ShootInterval(shootInterval));
+                GameObject.FindGameObjectWithTag("Manager").GetComponent<InterfaceManager>().ammoUpdate(playerNumber, ammoCount);
+                StartCoroutine(ShootInterval(shootInterval));
             }
         }
     }
     IEnumerator ShootInterval(float time) {
         yield return new WaitForSeconds(time);
-        if (ammoCount == 0)
-            ammoCount = 3;
-        shoot = true;
+
+        if (ammoCount != 0) {
+            shoot = true;
+        }
+        
+
     }
     public void Hit(int damage) {
         health -= damage;
@@ -66,6 +69,7 @@ public class Tank : MonoBehaviour {
     }
     public void Death() {
         Destroy(transform.gameObject);
+        
     }
 
 }
