@@ -56,5 +56,13 @@ public class Tank : MonoBehaviour {
             ammoCount = 3;
         shoot = true;
     }
+    public void Hit(int damage) {
+        health -= damage;
+        if (health <= 0)
+            Death();
+    }
+    public void Death() {
+        
+    }
 }
     
