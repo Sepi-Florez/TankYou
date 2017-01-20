@@ -1,0 +1,734 @@
+fileFormatVersion: 2
+guid: 71cdf52e3c207ca4ab69bebd88303ee5
+timeCreated: 1484930973
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Rupsband_0
+    21300002: Rupsband_1
+    21300004: Rupsband_2
+    21300006: Rupsband_3
+    21300008: Rupsband_4
+    21300010: Rupsband_5
+    21300012: Rupsband_6
+    21300014: Rupsband_7
+    21300016: Rupsband_8
+    21300018: Rupsband_9
+    21300020: Rupsband_10
+    21300022: Rupsband_11
+    21300024: Rupsband_12
+    21300026: Rupsband_13
+    21300028: Rupsband_14
+    21300030: Rupsband_15
+    21300032: Rupsband_16
+    21300034: Rupsband_17
+    21300036: Rupsband_18
+    21300038: Rupsband_19
+    21300040: Rupsband_20
+    21300042: Rupsband_21
+    21300044: Rupsband_22
+    21300046: Rupsband_23
+    21300048: Rupsband_24
+    21300050: Rupsband_25
+    21300052: Rupsband_26
+    21300054: Rupsband_27
+    21300056: Rupsband_28
+    21300058: Rupsband_29
+    21300060: Rupsband_30
+    21300062: Rupsband_31
+    21300064: Rupsband_32
+    21300066: Rupsband_33
+    21300068: Rupsband_34
+    21300070: Rupsband_35
+    21300072: Rupsband_36
+    21300074: Rupsband_37
+    21300076: Rupsband_38
+    21300078: Rupsband_39
+    21300080: Rupsband_40
+    21300082: Rupsband_41
+    21300084: Rupsband_42
+    21300086: Rupsband_43
+    21300088: Rupsband_44
+    21300090: Rupsband_45
+    21300092: Rupsband_46
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rupsband_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1188
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_1
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1188
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_2
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 1188
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_3
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1188
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_4
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 1188
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_5
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 1188
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_6
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 1188
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_7
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 996
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_8
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 996
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_9
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 996
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_10
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 996
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_11
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 996
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_12
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 996
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_13
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 996
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_14
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 804
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_15
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 804
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_16
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 804
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_17
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 804
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_18
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 804
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_19
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 804
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_20
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 804
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_21
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 612
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_22
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 612
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_23
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 612
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_24
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 612
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_25
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 612
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_26
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 612
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_27
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 612
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_28
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 420
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_29
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 420
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_30
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 420
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_31
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 420
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_32
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 420
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_33
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 420
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_34
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 420
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_35
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 228
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_36
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 228
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_37
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 228
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_38
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 228
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_39
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 228
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_40
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 228
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_41
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 228
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_42
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 36
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_43
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 36
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_44
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 36
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_45
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 36
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rupsband_46
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 36
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -3,14 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class InterfaceManager : MonoBehaviour {
+    public GameObject[] ammoObject;
+    public GameObject[] healthObject;
+    public int[] score;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    void Awake() {
+
+    }
 }

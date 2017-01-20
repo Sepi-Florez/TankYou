@@ -9,14 +9,15 @@ public class Tank : MonoBehaviour {
     public Transform bulletPos;
     public float reloadTime;
     public float shootInterval;
-    public Transform[] tankParts;
     public string[] inputStrings;
     bool shoot = true;
 
     float turnSpeed;
     public float turnSpeedO;
     public float rideSpeed;
-    public float gunTurnSpeed;  
+    public float gunTurnSpeed;
+
+    public Animator[] anim;
 
 
 	void Update () {
@@ -35,6 +36,8 @@ public class Tank : MonoBehaviour {
 
         transform.Rotate(0, 0, -Input.GetAxis(inputStrings[1]) * turnSpeed);
         transform.GetChild(0).Rotate(0, 0, Input.GetAxis(inputStrings[2]) * gunTurnSpeed);
+
+
         
     }
     void Shoot() {
@@ -62,7 +65,8 @@ public class Tank : MonoBehaviour {
             Death();
     }
     public void Death() {
-        
+        Destroy(transform.gameObject);
     }
+
 }
     
