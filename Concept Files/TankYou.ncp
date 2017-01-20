@@ -1,0 +1,85 @@
+<Project>
+  <Name>TankYou</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>General</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Tank</Name>
+        <Access>Public</Access>
+        <Location left="10" top="10" />
+        <Size width="460" height="384" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int Health = 100</Member>
+        <Member type="Field">int ammoCount = 3</Member>
+        <Member type="Field">GameObject bulletPref</Member>
+        <Member type="Field">public float reloadTime</Member>
+        <Member type="Field">bool shoot</Member>
+        <Member type="Method">void Update()</Member>
+        <Member type="Method">void Movement()</Member>
+        <Member type="Method">public void Hit(int damage)</Member>
+        <Member type="Method">public void Death()</Member>
+        <Member type="Method">IEnumerator Reloading(float time)</Member>
+        <Member type="Method">IEnumerator ShootInterval(float time)</Member>
+        <Member type="Method">void Shoot()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Bullet</Name>
+        <Access>Public</Access>
+        <Location left="323" top="482" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">void OnHit()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Collider</Name>
+        <Access>Public</Access>
+        <Location left="10" top="482" />
+        <Size width="273" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">void OnTriggerEnter(collider bullet)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>PickUp</Name>
+        <Access>Public</Access>
+        <Location left="532" top="10" />
+        <Size width="295" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public int pickUpType</Member>
+        <Member type="Field">public int pickUpPower</Member>
+        <Member type="Field">public int respawnTime</Member>
+        <Member type="Method">void OnTriggerEnter()</Member>
+        <Member type="Method">IEnumerator Respawn(int time)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>InterfaceManager</Name>
+        <Access>Public</Access>
+        <Location left="532" top="253" />
+        <Size width="259" height="367" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public GameObject[] ammoObj</Member>
+        <Member type="Field">public GameObject[] healthObj</Member>
+        <Member type="Field">public GameObject[] score</Member>
+        <Member type="Method">void Awake()</Member>
+        <Member type="Method">public void HealthUpdate(int player, int damage)</Member>
+        <Member type="Method">public void AmmoUpdate(int player)</Member>
+        <Member type="Method">public void MatchOver(int player)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="2" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
