@@ -11,6 +11,7 @@ public class Tank : MonoBehaviour {
     public float shootInterval;
     public string[] inputStrings;
     bool shoot = true;
+    bool reload = false;
 
     float turnSpeed;
     public float turnSpeedO;
@@ -43,25 +44,36 @@ public class Tank : MonoBehaviour {
     }
     void Shoot() {
         if (Input.GetButtonDown(inputStrings[3])) {
-            
-            if (shoot) {
-                GameObject bullet = (GameObject)Instantiate(bulletPref, bulletPos.position, transform.GetChild(0).rotation);
-                shoot = false;
-                ammoCount--;
-                GameObject.FindGameObjectWithTag("Manager").GetComponent<InterfaceManager>().ammoUpdate(playerNumber, ammoCount);
-                StartCoroutine(ShootInterval(shootInterval));
+            if (shoot == true) {
+                if (ammoCount > 0) {
+                    ammoCount--;
+                    shoot = false;
+                    
+                    GameObject bullet = (GameObject)Instantiate(bulletPref, bulletPos.position, transform.GetChild(0).rotation);
+                    GameObject.FindGameObjectWithTag("Manager").GetComponent<InterfaceManager>().ammoUpdate(playerNumber, ammoCount);
+                    StartCoroutine(ShootInterval(shootInterval));
+                }
+                else {
+                    reload = true;
+                    shoot = false;
+                }
+            }
+            if(reload == true){
+                reload = false;
+                GameObject.FindGameObjectWithTag("Manager").GetComponent<InterfaceManager>().ammoUpdate(playerNumber, -1);
+                StartCoroutine(ShootInterval(reloadTime));
             }
         }
     }
-    IEnumerator ShootInterval(float time) {
+    public IEnumerator ShootInterval(float time) {
         yield return new WaitForSeconds(time);
-
-        if (ammoCount != 0) {
             shoot = true;
+        if(reloadTime == time) {
+            ammoCount = 3;
         }
-        
 
     }
+
     public void Hit(int damage) {
         health -= damage;
         if (health <= 0)

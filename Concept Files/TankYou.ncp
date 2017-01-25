@@ -8,13 +8,21 @@
         <Name>Tank</Name>
         <Access>Public</Access>
         <Location left="10" top="10" />
-        <Size width="460" height="384" />
+        <Size width="460" height="417" />
         <Collapsed>False</Collapsed>
-        <Member type="Field">int Health = 100</Member>
         <Member type="Field">int ammoCount = 3</Member>
+        <Member type="Field">int Health = 100</Member>
         <Member type="Field">GameObject bulletPref</Member>
+        <Member type="Field">Transform bulletPos</Member>
         <Member type="Field">public float reloadTime</Member>
+        <Member type="Field">public int shootInterval</Member>
+        <Member type="Field">public string[] inputStrings</Member>
         <Member type="Field">bool shoot</Member>
+        <Member type="Field">public float turnSpeedO</Member>
+        <Member type="Field">public float rideSpeed</Member>
+        <Member type="Field">public float gunTurnSpeed</Member>
+        <Member type="Field">public Animator[] anim</Member>
+        <Member type="Field">public int playerNumber</Member>
         <Member type="Method">void Update()</Member>
         <Member type="Method">void Movement()</Member>
         <Member type="Method">public void Hit(int damage)</Member>
@@ -59,7 +67,7 @@
         <Name>InterfaceManager</Name>
         <Access>Public</Access>
         <Location left="532" top="253" />
-        <Size width="259" height="367" />
+        <Size width="411" height="367" />
         <Collapsed>False</Collapsed>
         <Member type="Field">public GameObject[] ammoObj</Member>
         <Member type="Field">public GameObject[] healthObj</Member>
@@ -73,14 +81,14 @@
     </Entities>
     <Relationships>
       <Relationship type="Association" first="2" second="0">
+        <Label>
+        </Label>
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
         <Direction>Unidirectional</Direction>
         <AssociationType>Association</AssociationType>
       </Relationship>
       <Relationship type="Association" first="0" second="4">
-        <Label>
-        </Label>
         <StartOrientation>Horizontal</StartOrientation>
         <EndOrientation>Horizontal</EndOrientation>
         <Direction>Unidirectional</Direction>
