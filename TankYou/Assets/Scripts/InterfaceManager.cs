@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class InterfaceManager : MonoBehaviour {
@@ -25,4 +26,9 @@ public class InterfaceManager : MonoBehaviour {
         }
 
     }
+    public void healthUpdate(int player, int health, int part) {
+        float fillValue = health;
+        fillValue = fillValue / 100;
+        healthObject[player].transform.GetChild(part + 3).GetComponent<Image>().fillAmount = fillValue; 
+    }   
 }

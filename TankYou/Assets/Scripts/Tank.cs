@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Tank : MonoBehaviour {
     public int ammoCount = 3;
-    public int health = 100;
+    public int[] health;
     public GameObject bulletPref;
     public Transform bulletPos;
     public float reloadTime;
@@ -74,10 +74,20 @@ public class Tank : MonoBehaviour {
 
     }
 
-    public void Hit(int damage) {
-        health -= damage;
-        if (health <= 0)
-            Death();
+    public void Hit(int damage, int part) {
+        health[part] -= damage;
+        GameObject.FindGameObjectWithTag("Manager").GetComponent<InterfaceManager>().healthUpdate(playerNumber, health[part], part);
+        for(int a =0; a < health.Length; a++) {
+           if(health[a] <= 0) {
+                if(a == 0) {
+                    Death();
+                }
+                else {
+                    print("wheels destroyed");
+                }
+           }
+        }
+
     }
     public void Death() {
         Destroy(transform.gameObject);

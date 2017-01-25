@@ -27,7 +27,6 @@
         <Member type="Method">void Movement()</Member>
         <Member type="Method">public void Hit(int damage)</Member>
         <Member type="Method">public void Death()</Member>
-        <Member type="Method">IEnumerator Reloading(float time)</Member>
         <Member type="Method">IEnumerator ShootInterval(float time)</Member>
         <Member type="Method">void Shoot()</Member>
         <Modifier>None</Modifier>
@@ -73,7 +72,7 @@
         <Member type="Field">public GameObject[] healthObj</Member>
         <Member type="Field">public GameObject[] score</Member>
         <Member type="Method">void Awake()</Member>
-        <Member type="Method">public void HealthUpdate(int player, int damage)</Member>
+        <Member type="Method">public void HealthUpdate(int player, int damage, int part)</Member>
         <Member type="Method">public void AmmoUpdate(int player)</Member>
         <Member type="Method">public void MatchOver(int player)</Member>
         <Modifier>None</Modifier>
