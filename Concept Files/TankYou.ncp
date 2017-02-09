@@ -32,15 +32,6 @@
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
-        <Name>Bullet</Name>
-        <Access>Public</Access>
-        <Location left="323" top="482" />
-        <Size width="162" height="216" />
-        <Collapsed>False</Collapsed>
-        <Member type="Method">void OnHit()</Member>
-        <Modifier>None</Modifier>
-      </Entity>
-      <Entity type="Class">
         <Name>Collider</Name>
         <Access>Public</Access>
         <Location left="10" top="482" />
@@ -77,29 +68,45 @@
         <Member type="Method">public void MatchOver(int player)</Member>
         <Modifier>None</Modifier>
       </Entity>
+      <Entity type="Class">
+        <Name>Bullet</Name>
+        <Access>Public</Access>
+        <Location left="321" top="482" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public int speed</Member>
+        <Member type="Method">void Update()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
     </Entities>
     <Relationships>
-      <Relationship type="Association" first="2" second="0">
-        <Label>
-        </Label>
+      <Relationship type="Association" first="1" second="0">
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
         <Direction>Unidirectional</Direction>
         <AssociationType>Association</AssociationType>
       </Relationship>
-      <Relationship type="Association" first="0" second="4">
-        <StartOrientation>Horizontal</StartOrientation>
-        <EndOrientation>Horizontal</EndOrientation>
-        <Direction>Unidirectional</Direction>
-        <AssociationType>Association</AssociationType>
-      </Relationship>
-      <Relationship type="Association" first="3" second="0">
+      <Relationship type="Association" first="0" second="3">
         <Label>
         </Label>
         <StartOrientation>Horizontal</StartOrientation>
         <EndOrientation>Horizontal</EndOrientation>
         <Direction>Unidirectional</Direction>
         <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="2" second="0">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="0" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
       </Relationship>
     </Relationships>
   </ProjectItem>
