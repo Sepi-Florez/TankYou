@@ -21,13 +21,18 @@ public class Tank : MonoBehaviour {
     public Animator[] anim;
 
     public int playerNumber;
+    void Awake() {
+        for(int a = 0; a < anim.Length; a++) {
+            anim[a] = transform.GetChild(a + 1).GetComponent<Animator>();
+        }
+    }
 
 	void Update () {
         Movement();
         Shoot();
 	}
     void Movement() {
-        if(Input.GetAxis(inputStrings[0]) > 0 || Input.GetAxis(inputStrings[0]) < 0) {
+        if(Input.GetAxis(inputStrings[0]) != 0){
             turnSpeed = turnSpeedO / 2;
         }
         else {
@@ -36,10 +41,11 @@ public class Tank : MonoBehaviour {
         transform.Translate(0, Input.GetAxis(inputStrings[0]) * rideSpeed, 0);
 
 
+
         transform.Rotate(0, 0, -Input.GetAxis(inputStrings[1]) * turnSpeed);
         transform.GetChild(0).Rotate(0, 0, Input.GetAxis(inputStrings[2]) * gunTurnSpeed);
 
-
+        CPTUpdate(); 
         
     }
     void Shoot() {
@@ -92,6 +98,10 @@ public class Tank : MonoBehaviour {
     public void Death() {
         Destroy(transform.gameObject);
         
+    }
+    void CPTUpdate() {
+        anim[0].SetFloat("speed", Input.GetAxis(inputStrings[0]));
+        anim[1].SetFloat("speed", Input.GetAxis(inputStrings[0]));
     }
 
 }
