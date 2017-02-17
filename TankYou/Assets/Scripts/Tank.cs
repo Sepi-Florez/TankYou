@@ -19,6 +19,8 @@ public class Tank : MonoBehaviour {
     public float gunTurnSpeed;
 
     public Animator[] anim;
+    int[] curState;
+    public float[] speeds;
 
     public int playerNumber;
     void Awake() {
@@ -33,15 +35,12 @@ public class Tank : MonoBehaviour {
 	}
     void Movement() {
         if(Input.GetAxis(inputStrings[0]) != 0){
-            turnSpeed = turnSpeedO / 2;
+             turnSpeed = turnSpeedO / 2;
         }
         else {
             turnSpeed = turnSpeedO;
         }
         transform.Translate(0, Input.GetAxis(inputStrings[0]) * rideSpeed, 0);
-
-
-
         transform.Rotate(0, 0, -Input.GetAxis(inputStrings[1]) * turnSpeed);
         transform.GetChild(0).Rotate(0, 0, Input.GetAxis(inputStrings[2]) * gunTurnSpeed);
 
@@ -96,12 +95,55 @@ public class Tank : MonoBehaviour {
 
     }
     public void Death() {
+
         Destroy(transform.gameObject);
         
     }
     void CPTUpdate() {
-        anim[0].SetFloat("speed", Input.GetAxis(inputStrings[0]));
-        anim[1].SetFloat("speed", Input.GetAxis(inputStrings[0]));
+        Vector2 moveState = new Vector2(Input.GetAxisRaw(inputStrings[0]), Input.GetAxisRaw(inputStrings[1]));
+        print(moveState);
+        if(moveState.y == 0) {
+            if(moveState.x == -1) {
+                anim[0].SetFloat("speed", speeds[1]);
+                anim[1].SetFloat("speed", speeds[1]);
+            }
+            else if(moveState.x == 0) {
+                anim[0].SetFloat("speed", 0);
+                anim[1].SetFloat("speed", 0);
+            }
+            else if(moveState.x == 1) {
+                anim[0].SetFloat("speed", speeds[0]);
+                anim[1].SetFloat("speed", speeds[0]);
+            }
+        }
+        else if(moveState.y == 1) {
+            if (moveState.x == -1) {
+                anim[0].SetFloat("speed", speeds[3]);
+                anim[1].SetFloat("speed", speeds[1]);
+            }
+            else if (moveState.x == 1) {
+                anim[0].SetFloat("speed", speeds[0]);
+                anim[1].SetFloat("speed", speeds[2]);
+            }
+            else if (moveState.x == 0) {
+                anim[0].SetFloat("speed", speeds[0]);
+                anim[1].SetFloat("speed", speeds[1]);
+            }
+        }
+        else if(moveState.y == -1) {
+            if (moveState.x == -1) {
+                anim[0].SetFloat("speed", speeds[1]);
+                anim[1].SetFloat("speed", speeds[3]);
+            }
+            else if (moveState.x == 1) {
+                anim[0].SetFloat("speed", speeds[2]);
+                anim[1].SetFloat("speed", speeds[0]);
+            }
+            else if (moveState.x == 0) {
+                anim[0].SetFloat("speed", speeds[1]);
+                anim[1].SetFloat("speed", speeds[0]);
+            }
+        }
     }
 
 }

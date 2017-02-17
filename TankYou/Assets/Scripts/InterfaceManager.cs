@@ -13,7 +13,6 @@ public class InterfaceManager : MonoBehaviour {
 
     }
     public void ammoUpdate(int player, int count) {
-        print(count);
         if(count == -1) {
             int a = 0;
             foreach (Transform ammo in ammoObject[player].transform) {
