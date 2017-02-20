@@ -21,12 +21,17 @@ public class Tank : MonoBehaviour {
     public Animator[] anim;
     int[] curState;
     public float[] speeds;
+    public float[] speeds2;
+    float l;
+    float r;
 
     public int playerNumber;
     void Awake() {
         for(int a = 0; a < anim.Length; a++) {
             anim[a] = transform.GetChild(a + 1).GetComponent<Animator>();
         }
+
+
     }
 
 	void Update () {
@@ -48,6 +53,7 @@ public class Tank : MonoBehaviour {
         
     }
     void Shoot() {
+    // What happends when you fire 
         if (Input.GetButtonDown(inputStrings[3])) {
             if (shoot == true) {
                 if (ammoCount > 0) {
@@ -71,6 +77,7 @@ public class Tank : MonoBehaviour {
         }
     }
     public IEnumerator ShootInterval(float time) {
+    // the time before you can shoot again
         yield return new WaitForSeconds(time);
             shoot = true;
         if(reloadTime == time) {
@@ -80,6 +87,7 @@ public class Tank : MonoBehaviour {
     }
 
     public void Hit(int damage, int part) {
+    // This is activated by the collider thats hit. It'll sent the right information to the interface manager and also update the current health. 
         health[part] -= damage;
         GameObject.FindGameObjectWithTag("Manager").GetComponent<InterfaceManager>().healthUpdate(playerNumber, health[part], part);
         for(int a =0; a < health.Length; a++) {
@@ -100,12 +108,15 @@ public class Tank : MonoBehaviour {
         
     }
     void CPTUpdate() {
+        //This function makes the wheels animation a bit more realistic
         Vector2 moveState = new Vector2(Input.GetAxisRaw(inputStrings[0]), Input.GetAxisRaw(inputStrings[1]));
-        print(moveState);
+
         if(moveState.y == 0) {
             if(moveState.x == -1) {
                 anim[0].SetFloat("speed", speeds[1]);
+                l = speeds[1];
                 anim[1].SetFloat("speed", speeds[1]);
+                r = speeds[1];
             }
             else if(moveState.x == 0) {
                 anim[0].SetFloat("speed", 0);
