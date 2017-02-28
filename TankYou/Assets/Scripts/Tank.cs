@@ -34,7 +34,7 @@ public class Tank : MonoBehaviour {
 
     }
 
-	void Update () {
+	void FixedUpdate () {
         Movement();
         Shoot();
 	}
