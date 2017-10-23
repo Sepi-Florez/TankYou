@@ -52,8 +52,8 @@ public class Tank : MonoBehaviour {
         CPTUpdate(); 
         
     }
+
     void Shoot() {
-    // What happends when you fire 
         if (Input.GetButtonDown(inputStrings[3])) {
             if (shoot == true) {
                 if (ammoCount > 0) {
@@ -61,6 +61,7 @@ public class Tank : MonoBehaviour {
                     shoot = false;
                     
                     GameObject bullet = (GameObject)Instantiate(bulletPref, bulletPos.position, transform.GetChild(0).rotation);
+                    bullet.GetComponent<Bullet>().origin = playerNumber;
                     GameObject.FindGameObjectWithTag("Manager").GetComponent<InterfaceManager>().ammoUpdate(playerNumber, ammoCount);
                     StartCoroutine(ShootInterval(shootInterval));
                 }
@@ -76,8 +77,8 @@ public class Tank : MonoBehaviour {
             }
         }
     }
-    public IEnumerator ShootInterval(float time) {
     // the time before you can shoot again
+    public IEnumerator ShootInterval(float time) {
         yield return new WaitForSeconds(time);
             shoot = true;
         if(reloadTime == time) {
@@ -85,9 +86,8 @@ public class Tank : MonoBehaviour {
         }
 
     }
-
-    public void Hit(int damage, int part) {
     // This is activated by the collider thats hit. It'll sent the right information to the interface manager and also update the current health. 
+    public void Hit(int damage, int part) {
         health[part] -= damage;
         GameObject.FindGameObjectWithTag("Manager").GetComponent<InterfaceManager>().healthUpdate(playerNumber, health[part], part);
         for(int a =0; a < health.Length; a++) {
@@ -107,8 +107,8 @@ public class Tank : MonoBehaviour {
         Destroy(transform.gameObject);
         
     }
+    //This function makes the wheels animation a bit more realistic
     void CPTUpdate() {
-        //This function makes the wheels animation a bit more realistic
         Vector2 moveState = new Vector2(Input.GetAxisRaw(inputStrings[0]), Input.GetAxisRaw(inputStrings[1]));
 
         if(moveState.y == 0) {
